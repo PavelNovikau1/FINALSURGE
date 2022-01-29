@@ -1,4 +1,4 @@
-package pageObjects;
+package page_objects;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.switchTo;

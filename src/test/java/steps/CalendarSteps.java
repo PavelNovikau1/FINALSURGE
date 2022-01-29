@@ -16,7 +16,7 @@ public class CalendarSteps extends AbstractSteps {
                         System.getProperty("password", PropertyReader.getProperty("password")));
     }
 
-    @When("User open calendar page")
+    @And("User open calendar page")
     public void userOpenCalendarPage() {
         trainingCalendarPage.openCalendarPagePage();
     }
@@ -46,7 +46,7 @@ public class CalendarSteps extends AbstractSteps {
         trainingCalendarPage.workoutName(name);
     }
 
-    @And("User click on the Add Workout button")
+    @When("User click on the Add Workout button")
     public void userClickOnTheAddWorkoutButton() {
         trainingCalendarPage.clickOnSaveButton();
     }

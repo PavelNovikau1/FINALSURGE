@@ -6,7 +6,7 @@ import io.cucumber.java.en.When;
 import org.testng.Assert;
 
 public class EquipmentSteps extends AbstractSteps {
-    @When("User open Equipment page")
+    @And("User open Equipment page")
     public void userOpenEquipmentPage() {
         equipmentPage.openEquipmentPage();
     }
@@ -41,7 +41,7 @@ public class EquipmentSteps extends AbstractSteps {
         equipmentShoesPage.selectShoeSize(size);
     }
 
-    @And("User press on add shoe button")
+    @When("User press on add shoe button")
     public void userPressOnAddShoeButton() {
         equipmentShoesPage.clickOnAddShoeButton();
     }

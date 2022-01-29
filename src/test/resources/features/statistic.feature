@@ -7,9 +7,9 @@ Feature: Workouts reports & statistic functionality.
   @SmokeTest
   Scenario: View athlete workout report activities
     Given User is logged on his account
-    When User open workout report page
+    And User open workout report page
     And User select report view group by month
-    And User click on the view report button
+    When User click on the view report button
     Then Athlete workout report table is appear on the page
 
 

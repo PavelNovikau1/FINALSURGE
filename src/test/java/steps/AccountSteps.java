@@ -14,13 +14,13 @@ public class AccountSteps extends AbstractSteps {
         loginPage.openLoginPage();
     }
 
-    @When("User entered valid email and password")
+    @And("User entered valid email and password")
     public void userEnteredValidEmailAndPassword() {
         loginPage.fillingEmailField(System.getProperty("email", PropertyReader.getProperty("email")))
                 .fillingPasswordField(System.getProperty("password", PropertyReader.getProperty("password")));
     }
 
-    @And("User click on the login button")
+    @When("User click on the login button")
     public void userClickOnTheLoginButton() {
         loginPage.clickOnTheLoginButton();
     }
@@ -35,7 +35,7 @@ public class AccountSteps extends AbstractSteps {
         Assert.assertEquals(loginPage.getInvalidLoginMessage(), message);
     }
 
-    @When("User entered invalid email {string} and password {string}")
+    @And("User entered invalid email {string} and password {string}")
     public void userEnteredInvalidEmailAndPassword(String email, String password) {
         loginPage.fillingEmailField(email)
                  .fillingPasswordField(password);

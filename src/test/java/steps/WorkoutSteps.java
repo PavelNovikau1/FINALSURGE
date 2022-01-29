@@ -7,7 +7,7 @@ import org.testng.Assert;
 
 public class WorkoutSteps extends AbstractSteps {
 
-    @When("User expand Workouts drop down menu on the header")
+    @And("User expand Workouts drop down menu on the header")
     public void userExpandWorkoutsDropDownMenuOnTheHeader() {
         headerPage.expandWorkoutDropDownMenu();
     }
@@ -32,7 +32,7 @@ public class WorkoutSteps extends AbstractSteps {
         workoutAddPage.fillingDescriptionNameField(description);
     }
 
-    @And("User click on the add new workout button")
+    @When("User click on the add new workout button")
     public void userClickOnTheAddNewWorkoutButton() {
         workoutAddPage.clickOnSaveButton();
     }

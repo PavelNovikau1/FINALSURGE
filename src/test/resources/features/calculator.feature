@@ -8,10 +8,10 @@ Feature: Calculators functionality.
   @SmokeTest
   Scenario Template: Calculate the pace of workout.
     Given User is logged on his account
-    When User open intensity calculator on the header
+    And User open intensity calculator on the header
     And User select event Marathon by clicking on radio button
     And User enter event time '<hours>' '<minutes>' '<seconds>'
-    And User click on calculate passes button
+    When User click on calculate passes button
     Then Workouts paces result table is open
 
     Examples:
@@ -21,10 +21,10 @@ Feature: Calculators functionality.
   @SmokeTest
   Scenario Template: Calculate daily caloric needs.
     Given User is logged on his account
-    When User open other calculators on the header
+    And User open other calculators on the header
     And User enter '<weight>' '<height>' '<age>' '<distance>'
     And User chose male gender radio button
-    And User click on the calculate caloric needs button
+    When User click on the calculate caloric needs button
     Then Today caloric needs table is displayed
 
     Examples:

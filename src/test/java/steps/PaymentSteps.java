@@ -3,10 +3,11 @@ package steps;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.testng.Assert;
 
 public class PaymentSteps extends AbstractSteps{
-    @Given("User open coaching upgrade page")
+    @And("User open coaching upgrade page")
     public void userOpenCoachingUpgradePage() {
         coachingUpgradePage.openCoachingUpgradePage();
     }
@@ -41,7 +42,7 @@ public class PaymentSteps extends AbstractSteps{
         coachingUpgradePage.fillingCvvNumberField(cvvNumber);
     }
 
-    @And("User Click on the pay now button")
+    @When("User Click on the pay now button")
     public void userClickOnThePayNowButton() {
         coachingUpgradePage.clickOnThePayNowButton();
     }

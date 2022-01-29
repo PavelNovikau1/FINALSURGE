@@ -7,15 +7,15 @@ Feature: Login and logout functionality.
   @SmokeTest
   Scenario: Login with valid credentials
     Given User open login page
-    When User entered valid email and password
-    And User click on the login button
+    And User entered valid email and password
+    When User click on the login button
     Then Verify dashboard page is opened
 
   @Critical
   Scenario Template: Login with invalid credentials
     Given User open login page
-    When User entered invalid email '<email>' and password '<password>'
-    And User click on the login button
+    And User entered invalid email '<email>' and password '<password>'
+    When User click on the login button
     Then Alert '<message>' is appear on the page
 
     Examples:
@@ -26,9 +26,9 @@ Feature: Login and logout functionality.
   @SmokeTest
   Scenario Template: Successful logout from account
     Given User open login page
-    When User entered valid email and password
+    And User entered valid email and password
     And User click on the login button
-    And User click on the logout link on the header
+    When User click on the logout link on the header
     Then Message '<message>' of successful logout is appear on the logout page
 
     Examples:

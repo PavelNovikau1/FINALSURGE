@@ -7,13 +7,13 @@ Feature: Calendar functionality.
   @SmokeTest
   Scenario Template: Workout quick add
     Given User is logged on his account
-    When User open calendar page
+    And User open calendar page
     And User click on quick add button
     And User enters a date '<date>'
     And User enters a time of day '<time>'
     And User select activity type '<activity>'
     And User named activity as '<name>'
-    And User click on the Add Workout button
+    When User click on the Add Workout button
     Then Activity '<name>' is appear on the calendar
 
     Examples:

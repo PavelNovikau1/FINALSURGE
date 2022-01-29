@@ -1,5 +1,6 @@
 package steps;
 
+import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -7,7 +8,7 @@ import org.testng.Assert;
 
 public class CalculatorSteps extends AbstractSteps {
 
-    @When("User open intensity calculator on the header")
+    @And("User open intensity calculator on the header")
     public void userOpenIntensityCalculatorOnTheHeader() {
         headerPage.openWorkoutsCalculator();
     }
@@ -34,7 +35,7 @@ public class CalculatorSteps extends AbstractSteps {
         Assert.assertTrue(workoutsCalculatorModalPage.isWorkoutPacesResultTableDisplayed());
     }
 
-    @When("User open other calculators on the header")
+    @And("User open other calculators on the header")
     public void userOpenOtherCalculatorsOnTheHeader() {
         headerPage.openOtherCalculators();
     }
@@ -53,7 +54,7 @@ public class CalculatorSteps extends AbstractSteps {
     }
 
 
-    @And("User click on the calculate caloric needs button")
+    @When("User click on the calculate caloric needs button")
     public void userClickOnTheCalculateCaloricNeedsButton() {
         otherCalculatorsModalPage.clickOnTheCalculateCaloricNeedsButton();
     }

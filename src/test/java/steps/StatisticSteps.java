@@ -6,7 +6,7 @@ import io.cucumber.java.en.When;
 import org.testng.Assert;
 
 public class StatisticSteps extends AbstractSteps {
-    @When("User open workout report page")
+    @And("User open workout report page")
     public void userOpenWorkoutReportPage() {
         workoutReportPage.openWorkoutReportPage();
     }
@@ -16,7 +16,7 @@ public class StatisticSteps extends AbstractSteps {
         workoutReportPage.clickOnTheGroupByMonthRadioButton();
     }
 
-    @And("User click on the view report button")
+    @When("User click on the view report button")
     public void userClickOnTheViewReportButton() {
         workoutReportPage.clickOnTheViewReportButton();
     }
