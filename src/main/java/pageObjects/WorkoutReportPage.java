@@ -9,8 +9,7 @@ public class WorkoutReportPage extends HeaderPage {
 
     private final SelenideElement groupByMonthRadioButton = $("#groupBy3");
     private final SelenideElement viewReportButton = $("#saveButton");
-    private final SelenideElement athleteWorkoutReportTable = $(By.xpath("//div[@class='w-box w-box-blue']//*[contains(text(),'2022')]"));
-
+    private final SelenideElement athleteWorkoutReportTable = $(By.xpath("//*[@class='w-box w-box-blue']//*[contains(text(),'Athlete Workout Report')]"));
     public void openWorkoutReportPage() {
         open(BASE_URL + "WorkoutReport.cshtml");
     }
