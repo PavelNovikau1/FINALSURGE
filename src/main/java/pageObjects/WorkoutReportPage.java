@@ -3,8 +3,10 @@ package pageObjects;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import com.codeborne.selenide.SelenideElement;
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
 
+@Log4j2
 public class WorkoutReportPage extends HeaderPage {
 
     private final SelenideElement groupByMonthRadioButton = $("#groupBy3");
@@ -15,11 +17,13 @@ public class WorkoutReportPage extends HeaderPage {
     }
 
     public WorkoutReportPage clickOnTheGroupByMonthRadioButton() {
+        log.info("Click on the <group by month radio button>");
         groupByMonthRadioButton.click();
         return this;
     }
 
     public WorkoutReportPage clickOnTheViewReportButton() {
+        log.info("Click on the <view report button>");
         viewReportButton.click();
         return this;
     }

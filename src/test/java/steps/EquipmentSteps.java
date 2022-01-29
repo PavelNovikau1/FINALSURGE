@@ -28,7 +28,7 @@ public class EquipmentSteps extends AbstractSteps {
 
     @And("User filling model name {string} field")
     public void userFillingModelNameField(String model) {
-        equipmentShoesPage.fillingBrandNameField(model);
+        equipmentShoesPage.fillingModelNameField(model);
     }
 
     @And("User enter cost {string}")
