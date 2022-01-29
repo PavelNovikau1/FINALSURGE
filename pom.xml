@@ -35,12 +35,6 @@
                     <systemPropertyVariables>
                         <allure.results.directory>target/allure-results</allure.results.directory>
                     </systemPropertyVariables>
-                    <properties>
-                        <property>
-                            <name>dataproviderthreadcount</name>
-                            <value>5</value>
-                        </property>
-                    </properties>
                 </configuration>
                 <dependencies>
                     <dependency>
