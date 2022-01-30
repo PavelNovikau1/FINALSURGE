@@ -12,8 +12,8 @@ public class CalendarSteps extends AbstractSteps {
     @Given("User is logged on his account")
     public void userIsLoggedOnHisAccount() {
         loginPage.openLoginPage()
-                .login(System.getProperty("email", PropertyReader.getProperty("email")),
-                        System.getProperty("password", PropertyReader.getProperty("password")));
+                .login((System.getenv().getOrDefault("email", PropertyReader.getProperty("email"))),
+                        System.getenv().getOrDefault("password", PropertyReader.getProperty("password")));
     }
 
     @And("User open calendar page")
