@@ -16,8 +16,8 @@ public class AccountSteps extends AbstractSteps {
 
     @And("User entered valid email and password")
     public void userEnteredValidEmailAndPassword() {
-        loginPage.fillingEmailField(System.getenv("email"))
-                .fillingPasswordField(System.getenv("password"));
+        loginPage.fillingEmailField(System.getenv().getOrDefault("email", PropertyReader.getProperty("email")))
+                .fillingPasswordField(System.getenv().getOrDefault("password", PropertyReader.getProperty("password")));
     }
 
     @When("User click on the login button")
