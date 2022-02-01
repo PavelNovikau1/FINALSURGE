@@ -4,7 +4,7 @@ Feature: Login and logout functionality.
   the user wants to login with email and password
   & log out from account.
 
-  @SmokeTest
+  @SmokeTest @Login
   Scenario: Login with valid credentials
     Given User open login page
     And User entered valid email and password

@@ -10,6 +10,7 @@ Execute test by @tags:
 
         mvn clean test -Dcucumber.filter.tags="@Critical"
         mvn clean test -Dcucumber.filter.tags="@SmokeTest"
+        mvn clean test -Dcucumber.filter.tags="@Login"
 
 Cross browser launch command (default chrome):
 
