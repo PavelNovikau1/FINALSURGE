@@ -20,13 +20,13 @@ public class LoginPage extends BasePage {
     }
 
     public LoginPage fillingEmailField(String email) {
-        log.info(String.format("Type text email into email field", email));
+        log.info("Type text ***email*** into email field");
         emailField.sendKeys(email);
         return this;
     }
 
     public LoginPage fillingPasswordField(String password) {
-        log.info(String.format("Type text password into email field", password));
+        log.info("Type text ***password*** into email field");
         passwordField.sendKeys(password);
         return this;
     }

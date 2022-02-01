@@ -20,7 +20,7 @@ Feature: Workout add functionality.
 
     Examples:
       | activity          | date       | time     | name         | description                   |
-      | Strength Training | 01/20/2022 | 11:15 AM | Best workout | Train hard like Chuck Norris! |
+      | Strength Training | 02/20/2022 | 11:15 AM | Best workout | Train hard like Chuck Norris! |
 
 
 

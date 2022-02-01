@@ -18,6 +18,6 @@ Feature: Calendar functionality.
 
     Examples:
       | date       | time     | activity | name                    |
-      | 01/18/2022 | 11:15 AM | Walk     | walking on the park     |
-      | 01/20/2022 | 7:15 pM  | Bike     | driven on the mountains |
+      | 02/18/2022 | 11:15 AM | Walk     | walking on the park     |
+      | 02/20/2022 | 7:15 pM  | Bike     | driven on the mountains |
 
