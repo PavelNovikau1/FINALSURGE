@@ -1,10 +1,10 @@
-Diploma project: website testing automation framework 
+Diploma project: website testing automation framework. 
 
 https://log.finalsurge.com/
 
 
 Technology stack on the project: 
-            JAVA / MAVEN / TestNG / CUCUMBER / SELENIDE / ALLURE Reporting / Log4j
+         JAVA / MAVEN / SELENIDE / TestNG / CUCUMBER  / ALLURE Reporting / CircleCI
 
 Execute test by @tags:
 

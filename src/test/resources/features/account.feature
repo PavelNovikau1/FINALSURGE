@@ -11,7 +11,7 @@ Feature: Login and logout functionality.
     When User click on the login button
     Then Verify dashboard page is opened
 
-  @Critical
+  @SmokeTest
   Scenario Template: Login with invalid credentials
     Given User open login page
     And User entered invalid email '<email>' and password '<password>'
