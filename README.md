@@ -2,6 +2,10 @@ Diploma project: website testing automation framework.
 
 https://log.finalsurge.com/
 
+Check List:
+
+            https://docs.google.com/spreadsheets/d/1UrROLIzV0LCrwzgSw3aJ4kORcpimDELkNVs82H3L53w/edit?usp=sharing
+
 
 Technology stack on the project: 
          JAVA / MAVEN / SELENIDE / TestNG / CUCUMBER  / ALLURE Reporting / CircleCI
